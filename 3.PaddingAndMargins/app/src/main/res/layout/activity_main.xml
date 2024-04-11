@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#40FFFFFF"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+
+        android:background="#40FF0000"
+        android:paddingStart="10dp"
+        android:paddingEnd="60dp"
+        android:paddingTop="30dp"
+        android:paddingBottom="50dp"
+        android:gravity="center"
+        android:text="First Text"
+        android:textColor="#BF000000"
+        android:textSize="36sp"
+        android:layout_margin="10dp"
+
+        android:textStyle="bold" />
+    <!--   "where TextView we use "sp"
+    scalable pixels
+    wrap_content jitna humara size honga
+    Padding is used for inside margin
+Margin is user for outside margin
+
+
+    -->
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+
+        android:background="#40FF0000"
+
+        android:gravity="center"
+        android:text="Another Text"
+        android:textColor="#BF000000"
+        android:textSize="36sp"
+        android:layout_margin="20dp"
+
+
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom">
+    <!--   "where TextView we use "sp"
+    scalable pixels
+    wrap_content jitna humara size honga
+    Padding is used for inside margin
+Margin is user for outside margin
+
+
+    -->
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+
+        android:background="#40FF0000"
+
+        android:gravity="center"
+        android:text="Layout Text"
+        android:textColor="#BF000000"
+        android:textSize="36sp"
+        android:layout_margin="20dp"
+
+
+        android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

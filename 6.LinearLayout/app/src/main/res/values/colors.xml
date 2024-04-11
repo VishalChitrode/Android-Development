@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Black -->
+    <color name="black">#FF000000</color>
+
+    <!-- White -->
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Red -->
+    <color name="red">#FFFF0000</color>
+
+    <!-- Green -->
+    <color name="green">#FF00FF00</color>
+
+    <!-- Blue -->
+    <color name="blue">#FF0000FF</color>
+
+    <!-- Yellow -->
+    <color name="yellow">#FFFFFF00</color>
+
+    <!-- Cyan -->
+    <color name="cyan">#FF00FFFF</color>
+
+    <!-- Magenta -->
+    <color name="magenta">#FFFF00FF</color>
+
+    <!-- Orange -->
+    <color name="orange">#FFFFA500</color>
+
+    <!-- Purple -->
+    <color name="purple">#FF800080</color>
+
+    <!-- Pink -->
+    <color name="pink">#FFFFC0CB</color>
+
+    <!-- Gray -->
+    <color name="gray">#FF808080</color>
+
+    <!-- Light Gray -->
+    <color name="light_gray">#FFD3D3D3</color>
+
+    <!-- Dark Gray -->
+    <color name="dark_gray">#FFA9A9A9</color>
+
+    <!-- Brown -->
+    <color name="brown">#FFA52A2A</color>
+
+    <!-- Maroon -->
+    <color name="maroon">#FF800000</color>
+
+    <!-- Navy -->
+    <color name="navy">#FF000080</color>
+
+    <!-- Teal -->
+    <color name="teal">#FF008080</color>
+
+    <!-- Olive -->
+    <color name="olive">#FF808000</color>
+
+    <!-- Sky Blue -->
+    <color name="sky_blue">#FF87CEEB</color>
+
+    <!-- Indigo -->
+    <color name="indigo">#FF4B0082</color>
+
+    <!-- Salmon -->
+    <color name="salmon">#FFFA8072</color>
+
+    <!-- Lavender -->
+    <color name="lavender">#FFE6E6FA</color>
+</resources>
