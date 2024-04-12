@@ -13,9 +13,10 @@
         android:theme="@style/Theme._14AnimatedSplashScreen"
         tools:targetApi="31">
         <activity
-            android:name=".AnimatedSplashScreenActiviity"
-            android:launchMode="singleInstance"
+            android:name=".AnimatedSplashScreenWithGIFActivity"
             android:exported="true">
+
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,11 +26,19 @@
 
 
         </activity>
+
+
+
+
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".AnimatedSplashScreenActiviity"
+            android:exported="true"
+            android:launchMode="singleInstance">
 
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"></activity>
     </application>
 
 </manifest>
