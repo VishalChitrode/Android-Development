@@ -42,7 +42,7 @@ private open inner class  LongOperation : AsyncTask<String?,Void?, String?>(){
         super.onPostExecute(result)
         val intent = Intent(this@SplashScreenwithLoadingActivity,MainActivity::class.java)
         startActivity(intent)
-        finish() // it is used to show splash screen only once 
+        finish() // it is used to show splash screen only once
     }
 
 }
