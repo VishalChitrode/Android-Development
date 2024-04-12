@@ -16,8 +16,10 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+
+       }
     }
-}
+
 
 rootProject.name = "19. Custom Alert Dialog"
 include(":app")
