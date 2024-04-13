@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!-- Include a stylesheet called stylesheet.css . -->
+    <link href="stylesheet.css" rel="stylesheet" title="Normal" />
+    <title>The title of the page.</title>
+  </head>
+  <body>
+    <!-- The page's content goes here. -->
+
+    <!-- Demonstrates the use of a <div> tag to specify a custom CSS style for a certain part
+    of the HTML code. In this case the CSS file contains "div#imageExample {float: right;}".
+    If we wanted to apply the same style to more than one <div> tag, we would use
+    <div class="someClass"> instead and write "div.someClass {float: right;}" in the CSS file
+    instead. -->
+    <div id="imageExample">
+      <h3>Below is an Image</h3>
+      <p>(with <code>float: right;</code> set in the CSS file)</p>
+      <img src="nonsense.jpg" alt="This is a description of the image." />
+    </div>
+
+    <h3>This is a Small Heading</h3> <!-- (<h2> and <h1> are larger headings) -->
+    <p>This is a paragraph <a href="http://nyan.cat/">with a link</a>.</p>
+
+    <h3>Below is an Ordered List</h3>
+    <ol> <!-- Use <ul> instead to get a bulleted list. -->
+      <li>This is a list item.</li>
+      <li>This is another list item.</li>
+      <li>And another one.</li>
+    </ol>
+
+    <h3>Below is a Haiku</h3>
+    <p> <!-- The <br /> tag forces a line break. Useful for poetry, and other things. -->
+    The Tao that is seen<br />
+    Is not the true Tao until<br />
+    You bring fresh toner.
+    </p>
+
+    <h3>Below is a YouTube Video</h3>
+    <!-- This is how to embed a YouTube video directly in HTML. However, a slightly different
+    syntax is necessary to generate this HTML code from a JSP file; see "One Gotcha" in the
+    JSP section of the cheat sheet. -->
+    <iframe width="560" height="349" src="http://www.youtube.com/embed/iwGFalTRHDA"></iframe>
+
+    <!-- If this document uses JavaScript/JQuery, it should be included as follows, at the
+    end of the <body> section. Again, see the JSP section for how to correctly generate these
+    empty <script> elements. -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
+    <script type="text/javascript" src="myscript.js"></script>
+  </body>
+</html>
