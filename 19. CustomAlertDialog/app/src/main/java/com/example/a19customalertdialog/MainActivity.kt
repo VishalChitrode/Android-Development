@@ -41,14 +41,11 @@ class MainActivity : AppCompatActivity() {
                 .setTitleText("Are you sure?")
                 .setContentText("Won't be able to recover this file!")
                 .setConfirmText("Yes,delete it!")
-                .setConfirmClickListener { sDialog ->
-                    sDialog
-                        .setTitleText("Deleted!")
-                        .setContentText("Your imaginary file has been deleted!")
-                        .setConfirmText("OK")
-                        .setConfirmClickListener(null)
-                        .changeAlertType(SweetAlertDialog.SUCCESS_TYPE)
-                }
+                .setConfirmClickListener { sDialog -> sDialog.dismissWithAnimation() }
+                .setCancelButton(
+                    "Cancel"
+                )
+                { sDialog -> sDialog.dismissWithAnimation() }
                 .show()
         }
 

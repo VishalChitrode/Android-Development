@@ -44,11 +44,11 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.espresso.core)
+    implementation(libs.library)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    androidTestImplementation("androidx.test.espresso:espresso-core: 3.4.0")
-    implementation("com.github.f0ris.sweetalert:library:1.5.6")
+    implementation("com.github.f0ris.sweetalert:library:1.6.2")
 
 
 }
