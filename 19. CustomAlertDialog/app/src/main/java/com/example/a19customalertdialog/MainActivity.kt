@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         val btn3 :Button = findViewById<Button>(R.id.button3)
 
         btn1.setOnClickListener {
-            SweetAlertDialog(this, SweetAlertDialog.WARNING_TYPE)
+            SweetAlertDialog(this, SweetAlertDialog.SUCCESS_TYPE)
                 .setTitleText("Are you sure?")
                 .setContentText("Won't be able to recover this file!")
                 .setConfirmText("Yes,delete it!")
