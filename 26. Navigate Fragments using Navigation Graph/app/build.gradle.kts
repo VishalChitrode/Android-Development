@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.a25fragmentlifecycle"
+    namespace = "com.example.a26navigatefragmentsusingnavigationgraph"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.a25fragmentlifecycle"
+        applicationId = "com.example.a26navigatefragmentsusingnavigationgraph"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -25,9 +25,6 @@ android {
                 "proguard-rules.pro"
             )
         }
-    }
-    buildFeatures{
-        viewBinding  =true
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
@@ -48,7 +45,4 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-
-
-
 }
