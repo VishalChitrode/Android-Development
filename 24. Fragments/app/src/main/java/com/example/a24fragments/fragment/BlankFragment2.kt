@@ -8,27 +8,27 @@ import android.view.ViewGroup
 import android.widget.Toast
 import com.example.a24fragments.R
 import com.example.a24fragments.databinding.FragmentBlank1Binding
+import com.example.a24fragments.databinding.FragmentBlank2Binding
 
-class BlankFragment1 : Fragment() {
-   private lateinit var binding: FragmentBlank1Binding
+
+class BlankFragment2 : Fragment() {
+    private lateinit var binding: FragmentBlank2Binding
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
     }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        binding =  FragmentBlank1Binding.inflate(inflater, container, false) // simple convert it into view
-
-       binding.button.setOnClickListener {
-           Toast.makeText(context,"This is Toast",Toast.LENGTH_SHORT).show()
-//here we use binding to call first fragment button and set setonclicklistner
-       }
+        binding = FragmentBlank2Binding.inflate(inflater, container, false)
+        // Inflate the layout for this fragment
+        binding.fr2button.setOnClickListener {
+            Toast.makeText(context, "This is Second Fragment", Toast.LENGTH_SHORT).show()
+        }
 
         return binding.root // Here we return view
     }
@@ -36,5 +36,6 @@ class BlankFragment1 : Fragment() {
     companion object {
 
 
-            }
     }
+}
+
