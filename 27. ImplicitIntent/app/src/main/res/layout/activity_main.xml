@@ -7,13 +7,59 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/webpage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="80dp"
+        android:text="Web Page"
+        android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/opencamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Open Camera"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/webpage"
+        app:layout_constraintStart_toStartOf="@+id/webpage"
+        app:layout_constraintTop_toBottomOf="@+id/webpage" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="@+id/editTextText"
+        app:layout_constraintStart_toStartOf="@+id/editTextText"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="enter your text"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/makecall"
+        app:layout_constraintStart_toStartOf="@+id/makecall"
+        app:layout_constraintTop_toBottomOf="@+id/makecall" />
+
+    <Button
+        android:id="@+id/makecall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Make Call"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/opencamera"
+        app:layout_constraintStart_toStartOf="@+id/opencamera"
+        app:layout_constraintTop_toBottomOf="@+id/opencamera" />
 </androidx.constraintlayout.widget.ConstraintLayout>
