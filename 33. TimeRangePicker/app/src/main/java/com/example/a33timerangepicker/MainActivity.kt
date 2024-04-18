@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.picker.startTime = TimeRangePicker.Time(12, 0)
 // Set new time by minutes
-        binding.picker.startTimeMinutes = 1
+        binding.picker.startTimeMinutes = 320
 
 
             binding.picker.setOnDragChangeListener(object : TimeRangePicker.OnDragChangeListener {

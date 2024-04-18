@@ -16,6 +16,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:trp_endTime="6:30"
+        app:trp_clockFace="SAMSUNG"
         app:trp_startTime="22:00"
         app:trp_thumbIconEnd="@drawable/alarm"
         app:trp_thumbIconStart="@drawable/moon" />
