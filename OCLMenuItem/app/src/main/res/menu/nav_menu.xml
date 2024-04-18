@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/updates"
+        android:title="Updates" />
+    <item
+        android:id="@+id/calls"
+        android:icon="@drawable/call"
+        android:title="Calls" />
+    <item
+        android:id="@+id/communites"
+        android:icon="@drawable/communities"
+        android:title="Communities" />
+    <item
+        android:id="@+id/message"
+        android:icon="@drawable/chats"
+        android:title="Chats" />
+</menu>

@@ -3,6 +3,9 @@ package com.example.a30animatedbottomnavigationbar
 
 import android.os.Bundle
 import android.util.Log
+import android.view.Menu
+import android.view.MenuItem
+import android.widget.Toast
 
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -14,10 +17,9 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 import nl.joery.animatedbottombar.AnimatedBottomBar
 
 class MainActivity : AppCompatActivity() {
-    private  val binding: ActivityMainBinding by lazy {
+    private val binding: ActivityMainBinding by lazy {
         ActivityMainBinding.inflate(layoutInflater)
-   }
-
+    }
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -65,7 +67,8 @@ class MainActivity : AppCompatActivity() {
 
 
         })
-    }}
 
+    }
+}
 
 
