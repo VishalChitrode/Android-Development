@@ -16,9 +16,10 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven { url  = uri("https://jitpack.io") }
     }
 }
 
-rootProject.name = "32. Creative Animation on UI Views"
+rootProject.name = "32. Creative Animationon UI Views"
 include(":app")
  
