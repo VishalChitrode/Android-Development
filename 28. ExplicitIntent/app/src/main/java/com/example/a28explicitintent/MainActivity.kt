@@ -26,9 +26,11 @@ class MainActivity : AppCompatActivity() {
         }
         binding.button.setOnClickListener {
  // here we use binding to find button and use setonclicklistner
-            val intent  = Intent(this,ProfileActivity::class.java) // for main activity we use this keyword and gave other activity id's and ::class.java
-            startActivity(intent) // here we start activity and gave intents
 
+            val intent  = Intent(this,ProfileActivity::class.java) // for main activity we use this keyword and gave other activity id's and ::class.java
+
+            startActivity(intent) // here we start activity and gave intents
+            finish() // this use to finish activity
         }
     }
 }

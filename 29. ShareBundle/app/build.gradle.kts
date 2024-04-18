@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.a28explicitintent"
+    namespace = "com.example.a29sharebundle"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.a28explicitintent"
+        applicationId = "com.example.a29sharebundle"
         minSdk = 21
         targetSdk = 34
         versionCode = 1
@@ -26,9 +26,9 @@ android {
             )
         }
     }
-   buildFeatures{
-       viewBinding = true
-   }
+    buildFeatures{
+        viewBinding = true
+    }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
