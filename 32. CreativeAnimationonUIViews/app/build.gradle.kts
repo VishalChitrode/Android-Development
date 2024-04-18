@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.a31motiontoast"
+    namespace = "com.example.a32creativeanimationonuiviews"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.a31motiontoast"
+        applicationId = "com.example.a32creativeanimationonuiviews"
         minSdk = 21
         targetSdk = 34
         versionCode = 1
@@ -45,8 +45,4 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-
-        implementation ("com.github.Spikeysanju:MotionToast:1.4")
-
-
 }
