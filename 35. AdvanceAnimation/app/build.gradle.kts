@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.a34animation"
+    namespace = "com.example.a35advanceanimation"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.a34animation"
+        applicationId = "com.example.a35advanceanimation"
         minSdk = 21
         targetSdk = 34
         versionCode = 1
@@ -26,9 +26,6 @@ android {
             )
         }
     }
-    buildFeatures{
-        viewBinding = true
-    }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
@@ -39,7 +36,7 @@ android {
 }
 
 dependencies {
-    val lottieVersion = "3.4.0"
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -49,6 +46,6 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
-    implementation ("com.airbnb.android:lottie:$lottieVersion")
+    implementation("com.airbnb.android:lottie:6.4.0")
 
 }
