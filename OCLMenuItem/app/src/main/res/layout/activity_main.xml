@@ -5,7 +5,6 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffff"
     tools:context=".MainActivity">
 
 
@@ -15,8 +14,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:scrollIndicators="left"
-        app:itemIconTint="#A6FFFFFF"
-        app:itemTextColor="#A6FFFFFF"
         app:labelVisibilityMode="labeled"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
