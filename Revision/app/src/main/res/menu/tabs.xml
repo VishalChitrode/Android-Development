@@ -4,15 +4,15 @@
         android:icon="@drawable/chat"
         android:title="Chats" />
     <item
-        android:id="@+id/tab_updates"
+        android:id="@+id/updates"
         android:icon="@drawable/updates"
         android:title="Status" />
     <item
-        android:id="@+id/tab_communities"
+        android:id="@+id/communities"
         android:icon="@drawable/communities"
         android:title="Communities" />
     <item
-        android:id="@+id/tab_calls"
+        android:id="@+id/calls"
         android:icon="@drawable/calls"
         android:title="Calls" />
 </menu>
