@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "771981474049",
+    "project_id": "login-and-signup-firebas-864c7",
+    "storage_bucket": "login-and-signup-firebas-864c7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:771981474049:android:5953097a5a85abf8d5c300",
+        "android_client_info": {
+          "package_name": "com.example.a37loginandsignupusingfirebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB51Tu_vGbVA6eafdyC0nSGV0DOSnW-Zpw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
