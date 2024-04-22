@@ -1,14 +1,15 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    id("com.google.gms.google-services")
 }
 
 android {
-    namespace = "com.example.whatsappclone"
+    namespace = "com.example.revise"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.whatsappclone"
+        applicationId = "com.example.revise"
         minSdk = 21
         targetSdk = 34
         versionCode = 1
@@ -28,7 +29,6 @@ android {
     }
     buildFeatures{
         viewBinding = true
-
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
@@ -49,5 +49,13 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    implementation("com.airbnb.android:lottie:6.4.0") // lottie animation
+    implementation ("com.airbnb.android:lottie:6.4.0")// for splash screen
+    implementation(platform("com.google.firebase:firebase-bom:32.8.1"))
+    implementation("com.google.firebase:firebase-analytics")
+    // Add the dependency for the Firebase Authentication library
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation("com.google.firebase:firebase-auth")
+
+    // Also add the dependency for the Google Play services library and specify its version
+    implementation("com.google.android.gms:play-services-auth:21.1.0")
 }
