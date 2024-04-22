@@ -1,6 +1,9 @@
 package com.example.revise
 
+import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,12 +19,9 @@ class SplashActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-<<<<<<<< HEAD:Revise/app/src/main/java/com/example/revise/MainActivity.kt
-========
         Handler(Looper.getMainLooper()).postDelayed({
-            startActivity(Intent(this,SignUpActivity::class.java))
+            startActivity(Intent(this,MainActivity::class.java))
             finish()
-        },3000)
->>>>>>>> origin/master:Revise/app/src/main/java/com/example/revise/SplashActivity.kt
+        },3300)
     }
 }

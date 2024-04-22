@@ -13,27 +13,33 @@
         android:theme="@style/Theme.Revise"
         tools:targetApi="31">
         <activity
-            android:name=".SignInActivity"
-            android:exported="false" />
-        <activity
             android:name=".SplashActivity"
-            android:exported="true">
+            android:exported="true" >
+
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+
+
+
         </activity>
-<<<<<<< HEAD:Revise/app/src/main/AndroidManifest.xml
-=======
         <activity
             android:name=".SignUpActivity"
-            android:exported="true" />
+            android:exported="false" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
+        </activity>
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
->>>>>>> origin/master:WhatsAppClone/app/src/main/AndroidManifest.xml
     </application>
 
 </manifest>
