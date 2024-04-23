@@ -28,6 +28,7 @@ class MainActivity : AppCompatActivity() {
 
         loadFragment(ChatsFragment())
         bottomNav = findViewById(R.id.bottomNav) as BottomNavigationView
+        bottomNav.selectedItemId = R.id.chat
         bottomNav.setOnItemSelectedListener {
             when (it.itemId) {
                 R.id.chat -> {
