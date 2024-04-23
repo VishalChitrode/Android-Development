@@ -1,7 +1,9 @@
 package com.example.revise
 
+import android.content.ContentValues.TAG
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -22,13 +24,12 @@ class MainActivity : AppCompatActivity() {
 
         val currentUser = auth.currentUser
         if (currentUser != null) {
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
-            finish()
+            Log.d(TAG,"Check User")
+//            val intent = Intent(this, MainActivity::class.java)
+//            startActivity(intent)
+//            finish()
         }
     }
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -43,12 +44,12 @@ class MainActivity : AppCompatActivity() {
         binding.signincreatehere.setOnClickListener{
             val intent = Intent(this,SignUpActivity::class.java)
             startActivity(intent)
-            finish()
         }
 
         binding.signinbutton.setOnClickListener{
             val signinusername = binding.signineditTextTextEmailAddress.text.toString()
             val signinpassword = binding.siginpeditTextTextPassword.text.toString()
+            Log.d(TAG,"Variable initialize")
 
             if (signinusername.isEmpty() || signinpassword.isEmpty()){
                 Toast.makeText(this,"Please filled the fields",Toast.LENGTH_SHORT).show()
