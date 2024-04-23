@@ -1,3 +1,0 @@
-com.example.revise.test
-style WhiteBackgroundDialogTheme
-style WhiteBackgroundTheme
