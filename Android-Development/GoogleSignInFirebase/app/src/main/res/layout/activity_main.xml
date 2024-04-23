@@ -101,7 +101,7 @@
                 android:inputType="numberPassword"
                 android:minHeight="48dp" />
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/signin_button"
                 android:layout_width="280dp"
                 android:layout_height="wrap_content"
