@@ -1,7 +1,9 @@
 package com.example.revise
 
+import android.content.ContentValues.TAG
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -12,14 +14,15 @@ import com.google.firebase.auth.FirebaseAuth
 
 class SignupActivity : AppCompatActivity() {
 
-    private val binding: ActivitySignupBinding by lazy {
-        ActivitySignupBinding.inflate(layoutInflater)
-    }
+   private  val binding :ActivitySignupBinding by lazy {
+       ActivitySignupBinding.inflate(layoutInflater)
+   }
     private lateinit var auth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+        ActivitySignupBinding.inflate(layoutInflater)
         setContentView(binding.root)
         auth = FirebaseAuth.getInstance()
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
@@ -47,6 +50,7 @@ class SignupActivity : AppCompatActivity() {
                     .addOnCompleteListener { taskId ->
                         if (taskId.isSuccessful){
                             Toast.makeText(this,"Registration SuccessFull",Toast.LENGTH_SHORT).show()
+                            Log.d(TAG,"Here registration successfully complete and goto login page")
                             val intent = Intent(this,SignInActivity::class.java)
                             startActivity(intent)
                             finish()
@@ -56,6 +60,8 @@ class SignupActivity : AppCompatActivity() {
                         {
                             Toast.makeText(this,"Registration Failed ${taskId.exception?.message}",Toast.LENGTH_SHORT).show()
                         }
+                        auth = FirebaseAuth.getInstance()
+                        auth.signOut() // place here to direct go on login activity
                     }
             }
         }

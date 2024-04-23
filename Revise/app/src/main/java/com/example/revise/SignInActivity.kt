@@ -21,10 +21,9 @@ class SignInActivity : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
         val currentUser = auth.currentUser
-        if (currentUser != null){
+        if (currentUser != null){ // check is user is already log in
             val intent = Intent(this,MainActivity::class.java)
             startActivity(intent)
-            finish()
         }
     }
 
@@ -33,14 +32,16 @@ class SignInActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(binding.root)
         auth = FirebaseAuth.getInstance()
+        setContentView(binding.root)
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
         binding.sigininCreatenewbutton.setOnClickListener{
+            Toast.makeText(this,"Register yourself",Toast.LENGTH_SHORT).show()
             val intent = Intent(this,SignupActivity::class.java)
             startActivity(intent)
             finish()
