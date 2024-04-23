@@ -1,0 +1,246 @@
+[
+    {
+        "merged": "com.example.revise.app-debug-40:/drawable_camera.png.flat",
+        "source": "com.example.revise.app-main-42:/drawable/camera.png"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/drawable_contact.png.flat",
+        "source": "com.example.revise.app-main-42:/drawable/contact.png"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/drawable_chat.png.flat",
+        "source": "com.example.revise.app-main-42:/drawable/chat.png"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.revise.app-main-42:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.revise.app-main-42:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/drawable_user.png.flat",
+        "source": "com.example.revise.app-main-42:/drawable/user.png"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/drawable_qr_code.png.flat",
+        "source": "com.example.revise.app-main-42:/drawable/qr_code.png"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.revise.app-main-42:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/drawable_status_camera.png.flat",
+        "source": "com.example.revise.app-main-42:/drawable/status_camera.png"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/drawable_meta.png.flat",
+        "source": "com.example.revise.app-main-42:/drawable/meta.png"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/raw_animation.json.flat",
+        "source": "com.example.revise.app-main-42:/raw/animation.json"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/drawable_world.png.flat",
+        "source": "com.example.revise.app-main-42:/drawable/world.png"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/layout_activity_main.xml.flat",
+        "source": "com.example.revise.app-main-42:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.revise.app-main-42:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/drawable_storage_and_data.png.flat",
+        "source": "com.example.revise.app-main-42:/drawable/storage_and_data.png"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/layout_activity_sign_up.xml.flat",
+        "source": "com.example.revise.app-main-42:/layout/activity_sign_up.xml"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/drawable_call_plus.png.flat",
+        "source": "com.example.revise.app-main-42:/drawable/call_plus.png"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/font_roboto.xml.flat",
+        "source": "com.example.revise.app-main-42:/font/roboto.xml"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/font_roboto_bold.xml.flat",
+        "source": "com.example.revise.app-main-42:/font/roboto_bold.xml"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/drawable_add_group.png.flat",
+        "source": "com.example.revise.app-main-42:/drawable/add_group.png"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/drawable_calls.png.flat",
+        "source": "com.example.revise.app-main-42:/drawable/calls.png"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/layout_activity_splash.xml.flat",
+        "source": "com.example.revise.app-main-42:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/drawable_button.xml.flat",
+        "source": "com.example.revise.app-main-42:/drawable/button.xml"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/drawable_invite_a_friend.png.flat",
+        "source": "com.example.revise.app-main-42:/drawable/invite_a_friend.png"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.revise.app-main-42:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/drawable_facebook.png.flat",
+        "source": "com.example.revise.app-main-42:/drawable/facebook.png"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/drawable_archived.png.flat",
+        "source": "com.example.revise.app-main-42:/drawable/archived.png"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/drawable_question.png.flat",
+        "source": "com.example.revise.app-main-42:/drawable/question.png"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/drawable_whatsapp.png.flat",
+        "source": "com.example.revise.app-main-42:/drawable/whatsapp.png"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/drawable_lock.png.flat",
+        "source": "com.example.revise.app-main-42:/drawable/lock.png"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/drawable_pin.png.flat",
+        "source": "com.example.revise.app-main-42:/drawable/pin.png"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/drawable_message_color.png.flat",
+        "source": "com.example.revise.app-main-42:/drawable/message_color.png"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.revise.app-main-42:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.revise.app-main-42:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.revise.app-main-42:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.revise.app-main-42:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/drawable_verification_tick_small.png.flat",
+        "source": "com.example.revise.app-main-42:/drawable/verification_tick_small.png"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/drawable_add_contact.png.flat",
+        "source": "com.example.revise.app-main-42:/drawable/add_contact.png"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/drawable_instagram.png.flat",
+        "source": "com.example.revise.app-main-42:/drawable/instagram.png"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/drawable_bell.png.flat",
+        "source": "com.example.revise.app-main-42:/drawable/bell.png"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.revise.app-main-42:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/drawable_dots.png.flat",
+        "source": "com.example.revise.app-main-42:/drawable/dots.png"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.revise.app-main-42:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.example.revise.app-pngs-35:/drawable-anydpi-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/xml_backup_rules.xml.flat",
+        "source": "com.example.revise.app-main-42:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.revise.app-main-42:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.revise.app-main-42:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/drawable_pen.png.flat",
+        "source": "com.example.revise.app-main-42:/drawable/pen.png"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/drawable_app_updates.png.flat",
+        "source": "com.example.revise.app-main-42:/drawable/app_updates.png"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/drawable_google.png.flat",
+        "source": "com.example.revise.app-main-42:/drawable/google.png"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/drawable_search.png.flat",
+        "source": "com.example.revise.app-main-42:/drawable/search.png"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.revise.app-main-42:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/drawable_verification_tick.png.flat",
+        "source": "com.example.revise.app-main-42:/drawable/verification_tick.png"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/drawable_communities.png.flat",
+        "source": "com.example.revise.app-main-42:/drawable/communities.png"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/drawable_plus.png.flat",
+        "source": "com.example.revise.app-main-42:/drawable/plus.png"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/drawable_icon.xml.flat",
+        "source": "com.example.revise.app-main-42:/drawable/icon.xml"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/drawable_padlock.png.flat",
+        "source": "com.example.revise.app-main-42:/drawable/padlock.png"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/drawable_message.png.flat",
+        "source": "com.example.revise.app-main-42:/drawable/message.png"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/drawable_down_arrow.png.flat",
+        "source": "com.example.revise.app-main-42:/drawable/down_arrow.png"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/drawable_updates.png.flat",
+        "source": "com.example.revise.app-main-42:/drawable/updates.png"
+    },
+    {
+        "merged": "com.example.revise.app-debug-40:/drawable_key.png.flat",
+        "source": "com.example.revise.app-main-42:/drawable/key.png"
+    }
+]

@@ -1,0 +1,3 @@
+com.example.whatsappclone.test
+style WhiteBackgroundDialogTheme
+style WhiteBackgroundTheme

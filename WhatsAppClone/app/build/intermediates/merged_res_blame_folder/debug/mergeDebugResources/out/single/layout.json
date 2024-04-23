@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "com.example.whatsappclone.app-mergeDebugResources-31:/layout/activity_sign_up.xml",
+        "source": "com.example.whatsappclone.app-main-34:/layout/activity_sign_up.xml"
+    },
+    {
+        "merged": "com.example.whatsappclone.app-mergeDebugResources-31:/layout/activity_splash.xml",
+        "source": "com.example.whatsappclone.app-main-34:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.example.whatsappclone.app-mergeDebugResources-31:/layout/activity_sign_in.xml",
+        "source": "com.example.whatsappclone.app-main-34:/layout/activity_sign_in.xml"
+    }
+]

@@ -1,0 +1,6 @@
+com.example.whatsappclone.test.app-annotation-experimental-1.4.0-0 C:\Users\LENOVO\.gradle\caches\transforms-3\4a285b5c20544ee7d89596bf218df822\transformed\annotation-experimental-1.4.0\res
+com.example.whatsappclone.test.app-core-1.5.0-1 C:\Users\LENOVO\.gradle\caches\transforms-3\91b7a46fc46851877a92e612df0f0365\transformed\core-1.5.0\res
+com.example.whatsappclone.test.app-androidTest-2 D:\Android-Development\WhatsAppClone\app\build\generated\res\resValues\androidTest\debug
+com.example.whatsappclone.test.app-mergeDebugAndroidTestResources-3 D:\Android-Development\WhatsAppClone\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.example.whatsappclone.test.app-mergeDebugAndroidTestResources-4 D:\Android-Development\WhatsAppClone\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.example.whatsappclone.test.app-debugAndroidTest-5 D:\Android-Development\WhatsAppClone\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources

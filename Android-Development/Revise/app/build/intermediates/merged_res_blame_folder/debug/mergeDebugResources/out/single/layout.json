@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "com.example.revise.app-mergeDebugResources-39:/layout/activity_sign_up.xml",
+        "source": "com.example.revise.app-main-42:/layout/activity_sign_up.xml"
+    },
+    {
+        "merged": "com.example.revise.app-mergeDebugResources-39:/layout/activity_splash.xml",
+        "source": "com.example.revise.app-main-42:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.example.revise.app-mergeDebugResources-39:/layout/activity_main.xml",
+        "source": "com.example.revise.app-main-42:/layout/activity_main.xml"
+    }
+]

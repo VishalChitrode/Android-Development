@@ -1,0 +1,149 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.whatsappclone"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="34" />
+10
+11    <permission
+11-->[androidx.core:core:1.13.0] C:\Users\LENOVO\.gradle\caches\transforms-3\b9f18ea8500195924e058cfbc9db8c34\transformed\core-1.13.0\AndroidManifest.xml:22:5-24:47
+12        android:name="com.example.whatsappclone.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+12-->[androidx.core:core:1.13.0] C:\Users\LENOVO\.gradle\caches\transforms-3\b9f18ea8500195924e058cfbc9db8c34\transformed\core-1.13.0\AndroidManifest.xml:23:9-81
+13        android:protectionLevel="signature" />
+13-->[androidx.core:core:1.13.0] C:\Users\LENOVO\.gradle\caches\transforms-3\b9f18ea8500195924e058cfbc9db8c34\transformed\core-1.13.0\AndroidManifest.xml:24:9-44
+14
+15    <uses-permission android:name="com.example.whatsappclone.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+15-->[androidx.core:core:1.13.0] C:\Users\LENOVO\.gradle\caches\transforms-3\b9f18ea8500195924e058cfbc9db8c34\transformed\core-1.13.0\AndroidManifest.xml:26:5-97
+15-->[androidx.core:core:1.13.0] C:\Users\LENOVO\.gradle\caches\transforms-3\b9f18ea8500195924e058cfbc9db8c34\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
+16
+17    <application
+17-->D:\Android-Development\WhatsAppClone\app\src\main\AndroidManifest.xml:5:5-34:19
+18        android:allowBackup="true"
+18-->D:\Android-Development\WhatsAppClone\app\src\main\AndroidManifest.xml:6:9-35
+19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+19-->[androidx.core:core:1.13.0] C:\Users\LENOVO\.gradle\caches\transforms-3\b9f18ea8500195924e058cfbc9db8c34\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
+20        android:dataExtractionRules="@xml/data_extraction_rules"
+20-->D:\Android-Development\WhatsAppClone\app\src\main\AndroidManifest.xml:7:9-65
+21        android:debuggable="true"
+22        android:extractNativeLibs="true"
+23        android:fullBackupContent="@xml/backup_rules"
+23-->D:\Android-Development\WhatsAppClone\app\src\main\AndroidManifest.xml:8:9-54
+24        android:icon="@mipmap/ic_launcher"
+24-->D:\Android-Development\WhatsAppClone\app\src\main\AndroidManifest.xml:9:9-43
+25        android:label="@string/app_name"
+25-->D:\Android-Development\WhatsAppClone\app\src\main\AndroidManifest.xml:10:9-41
+26        android:roundIcon="@mipmap/ic_launcher_round"
+26-->D:\Android-Development\WhatsAppClone\app\src\main\AndroidManifest.xml:11:9-54
+27        android:supportsRtl="true"
+27-->D:\Android-Development\WhatsAppClone\app\src\main\AndroidManifest.xml:12:9-35
+28        android:testOnly="true"
+29        android:theme="@style/Theme.WhatsAppClone" >
+29-->D:\Android-Development\WhatsAppClone\app\src\main\AndroidManifest.xml:13:9-51
+30        <activity
+30-->D:\Android-Development\WhatsAppClone\app\src\main\AndroidManifest.xml:15:9-17:40
+31            android:name="com.example.whatsappclone.SignInActivity"
+31-->D:\Android-Development\WhatsAppClone\app\src\main\AndroidManifest.xml:16:13-43
+32            android:exported="false" />
+32-->D:\Android-Development\WhatsAppClone\app\src\main\AndroidManifest.xml:17:13-37
+33        <activity
+33-->D:\Android-Development\WhatsAppClone\app\src\main\AndroidManifest.xml:18:9-26:20
+34            android:name="com.example.whatsappclone.SplashActivity"
+34-->D:\Android-Development\WhatsAppClone\app\src\main\AndroidManifest.xml:19:13-43
+35            android:exported="true" >
+35-->D:\Android-Development\WhatsAppClone\app\src\main\AndroidManifest.xml:20:13-36
+36            <intent-filter>
+36-->D:\Android-Development\WhatsAppClone\app\src\main\AndroidManifest.xml:21:13-25:29
+37                <action android:name="android.intent.action.MAIN" />
+37-->D:\Android-Development\WhatsAppClone\app\src\main\AndroidManifest.xml:22:17-69
+37-->D:\Android-Development\WhatsAppClone\app\src\main\AndroidManifest.xml:22:25-66
+38
+39                <category android:name="android.intent.category.LAUNCHER" />
+39-->D:\Android-Development\WhatsAppClone\app\src\main\AndroidManifest.xml:24:17-77
+39-->D:\Android-Development\WhatsAppClone\app\src\main\AndroidManifest.xml:24:27-74
+40            </intent-filter>
+41        </activity>
+42        <activity
+42-->D:\Android-Development\WhatsAppClone\app\src\main\AndroidManifest.xml:27:9-29:39
+43            android:name="com.example.whatsappclone.SignUpActivity"
+43-->D:\Android-Development\WhatsAppClone\app\src\main\AndroidManifest.xml:28:13-43
+44            android:exported="true" />
+44-->D:\Android-Development\WhatsAppClone\app\src\main\AndroidManifest.xml:29:13-36
+45
+46        <meta-data
+46-->D:\Android-Development\WhatsAppClone\app\src\main\AndroidManifest.xml:31:9-33:57
+47            android:name="preloaded_fonts"
+47-->D:\Android-Development\WhatsAppClone\app\src\main\AndroidManifest.xml:32:13-43
+48            android:resource="@array/preloaded_fonts" />
+48-->D:\Android-Development\WhatsAppClone\app\src\main\AndroidManifest.xml:33:13-54
+49
+50        <provider
+50-->[androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\940e0085ee1366cef47ea5891a529993\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+51            android:name="androidx.startup.InitializationProvider"
+51-->[androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\940e0085ee1366cef47ea5891a529993\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+52            android:authorities="com.example.whatsappclone.androidx-startup"
+52-->[androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\940e0085ee1366cef47ea5891a529993\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+53            android:exported="false" >
+53-->[androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\940e0085ee1366cef47ea5891a529993\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+54            <meta-data
+54-->[androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\940e0085ee1366cef47ea5891a529993\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+55                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+55-->[androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\940e0085ee1366cef47ea5891a529993\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+56                android:value="androidx.startup" />
+56-->[androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\940e0085ee1366cef47ea5891a529993\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+57            <meta-data
+57-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\LENOVO\.gradle\caches\transforms-3\54bbfe60d5842d57f82c134666e819f2\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+58                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+58-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\LENOVO\.gradle\caches\transforms-3\54bbfe60d5842d57f82c134666e819f2\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+59                android:value="androidx.startup" />
+59-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\LENOVO\.gradle\caches\transforms-3\54bbfe60d5842d57f82c134666e819f2\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+60            <meta-data
+60-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\c9cac15fc84ffb48cc25a2b73dc7bcdd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+61                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+61-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\c9cac15fc84ffb48cc25a2b73dc7bcdd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+62                android:value="androidx.startup" />
+62-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\c9cac15fc84ffb48cc25a2b73dc7bcdd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+63        </provider>
+64
+65        <receiver
+65-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\c9cac15fc84ffb48cc25a2b73dc7bcdd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+66            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+66-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\c9cac15fc84ffb48cc25a2b73dc7bcdd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+67            android:directBootAware="false"
+67-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\c9cac15fc84ffb48cc25a2b73dc7bcdd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+68            android:enabled="true"
+68-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\c9cac15fc84ffb48cc25a2b73dc7bcdd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+69            android:exported="true"
+69-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\c9cac15fc84ffb48cc25a2b73dc7bcdd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+70            android:permission="android.permission.DUMP" >
+70-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\c9cac15fc84ffb48cc25a2b73dc7bcdd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+71            <intent-filter>
+71-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\c9cac15fc84ffb48cc25a2b73dc7bcdd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+72                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+72-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\c9cac15fc84ffb48cc25a2b73dc7bcdd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+72-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\c9cac15fc84ffb48cc25a2b73dc7bcdd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+73            </intent-filter>
+74            <intent-filter>
+74-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\c9cac15fc84ffb48cc25a2b73dc7bcdd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+75                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+75-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\c9cac15fc84ffb48cc25a2b73dc7bcdd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+75-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\c9cac15fc84ffb48cc25a2b73dc7bcdd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+76            </intent-filter>
+77            <intent-filter>
+77-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\c9cac15fc84ffb48cc25a2b73dc7bcdd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+78                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+78-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\c9cac15fc84ffb48cc25a2b73dc7bcdd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+78-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\c9cac15fc84ffb48cc25a2b73dc7bcdd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+79            </intent-filter>
+80            <intent-filter>
+80-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\c9cac15fc84ffb48cc25a2b73dc7bcdd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+81                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+81-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\c9cac15fc84ffb48cc25a2b73dc7bcdd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+81-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-3\c9cac15fc84ffb48cc25a2b73dc7bcdd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+82            </intent-filter>
+83        </receiver>
+84    </application>
+85
+86</manifest>

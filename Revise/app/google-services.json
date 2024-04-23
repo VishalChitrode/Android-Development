@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1088932972024",
+    "project_id": "revise-eca58",
+    "storage_bucket": "revise-eca58.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1088932972024:android:30e4b64cef43c9c3a8420d",
+        "android_client_info": {
+          "package_name": "com.example.revise"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCI1yGwG_0VDBmEhsQ0I7fdxdHw9K2-lxc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
