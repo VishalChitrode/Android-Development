@@ -15,13 +15,13 @@ class CreateActivity : AppCompatActivity() {
     private val binding: ActivityCreateBinding by lazy {
         ActivityCreateBinding.inflate(layoutInflater)
     }
-    private lateinit var auth : FirebaseAuth
+    private lateinit var auth : FirebaseAuth // here we declare firebase authentication variable
     private lateinit var DbRef : DatabaseReference // here we declare DB ref variable
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         auth = FirebaseAuth.getInstance()
-        DbRef = FirebaseDatabase.getInstance().reference // here we initialize the DB ref
+        DbRef = FirebaseDatabase.getInstance().reference // here we initialize the DB ref by this we get database reference
         setContentView(binding.root)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -39,7 +39,7 @@ class CreateActivity : AppCompatActivity() {
                 val currentuser = auth.currentUser // here we get the value of current user
                currentuser?. let { user->
                    //Generate unique key for every notes
-                   val noteKey = DbRef.child("Users").child("Uid").child("Notes").push().key
+                   val noteKey = DbRef.child("Users").child(user.uid).child("Notes").push().key
                    val noteitem = NoteItem(title,note)
                    if (noteKey != null){
                        DbRef.child("Users").child(user.uid).child("Notes").child(noteKey).setValue(noteitem)
@@ -54,7 +54,8 @@ class CreateActivity : AppCompatActivity() {
                    }
                }
             }
-
+binding.createTitle.setText("") // here we use this to clear textfield after adding notes in database 
+binding.createNote.setText("")
         }
     }
 }

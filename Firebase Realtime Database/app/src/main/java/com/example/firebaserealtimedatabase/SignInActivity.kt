@@ -16,16 +16,16 @@ class SignInActivity : AppCompatActivity() {
     }
     private lateinit var auth: FirebaseAuth
 
-//    override fun onStart() {
-//        super.onStart()
-//
-//        val currentUser = auth.currentUser
-//        if (currentUser != null) {
-//            val intent = Intent(this, MainActivity::class.java)
-//            startActivity(intent)
-//            finish()
-//        }
-//    }
+    override fun onStart() {
+        super.onStart()
+
+        val currentUser = auth.currentUser
+        if (currentUser != null) {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -57,6 +57,7 @@ class SignInActivity : AppCompatActivity() {
                         }else{
                             Toast.makeText(this,"Login Failed",Toast.LENGTH_SHORT).show()
                         }
+
                     }
 
             }
