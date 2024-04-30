@@ -37,9 +37,12 @@ class CreateActivity : AppCompatActivity() {
                 Toast.makeText(this,"Add Title & Note",Toast.LENGTH_SHORT).show()
             }else {
                 val currentuser = auth.currentUser // here we get the value of current user
-               currentuser?. let { user->
+               currentuser?. let { user-> // here we use lamda variable to use later
                    //Generate unique key for every notes
                    val noteKey = DbRef.child("Users").child(user.uid).child("Notes").push().key
+                   // push() generates a new child node under the "Notes" node with a unique key.
+                   //.key retrieves that unique key.
+
                    val noteitem = NoteItem(title,note)
                    if (noteKey != null){
                        DbRef.child("Users").child(user.uid).child("Notes").child(noteKey).setValue(noteitem)
@@ -54,7 +57,7 @@ class CreateActivity : AppCompatActivity() {
                    }
                }
             }
-binding.createTitle.setText("") // here we use this to clear textfield after adding notes in database 
+binding.createTitle.setText("") // here we use this to clear textfield after adding notes in database
 binding.createNote.setText("")
         }
     }
