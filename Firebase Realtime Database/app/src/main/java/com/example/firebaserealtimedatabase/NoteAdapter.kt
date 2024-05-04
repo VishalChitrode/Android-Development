@@ -2,10 +2,11 @@ package com.example.firebaserealtimedatabase
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.firebaserealtimedatabase.databinding.NotesItemBinding
 
-class NoteAdapter (private var notes: List<NoteItem>):RecyclerView.Adapter<NoteAdapter.NoteViewHolder>(){
+class NoteAdapter(private var context: List<NoteItem>, private var notes: List<NoteItem>, private val onItemClickListener: (NoteItem) -> Unit):RecyclerView.Adapter<NoteAdapter.NoteViewHolder>(){
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NoteViewHolder {

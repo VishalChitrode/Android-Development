@@ -14,7 +14,6 @@ import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
-import com.google.firebase.database.getValue
 
 class AllNotesActivity : AppCompatActivity() {
     private val binding: ActivityAllNotesBinding by lazy {
@@ -55,8 +54,10 @@ class AllNotesActivity : AppCompatActivity() {
 //                    notelist.reverse()
 
                 }
-                    val adapter = NoteAdapter(notelist)
+                    val adapter = NoteAdapter()
                 noterecyclerView.adapter  = adapter
+
+
             }
 
             override fun onCancelled(error: DatabaseError) {
@@ -65,7 +66,6 @@ class AllNotesActivity : AppCompatActivity() {
 
         })
 
-}
 
     }
-}
+}}
