@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity(), NoteAdapter.OnItemClickListener {
             auth.signOut() // place here to direct go on login activity
 
             val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestIdToken("194592876563-h6b225t9c71qe8qf36fjbftbo2o1bnue.apps.googleusercontent.com")
+                .requestIdToken("194592876563-em7co61p9dta5s4v3em48247kupb15pd.apps.googleusercontent.com")
                 .requestEmail().build()
             GoogleSignIn.getClient(this,gso).signOut()
             startActivity(Intent(this,LoginActivity::class.java))
