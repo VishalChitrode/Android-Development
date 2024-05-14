@@ -125,12 +125,14 @@ class MainActivity : AppCompatActivity(), NoteAdapter.OnItemClickListener {
         dialog.show()
     }
 
+
     private fun onupdateNote(noteId: String, newtitle: String, newtask: String) {
         val currentuser = auth.currentUser
-        val updatetask = NoteItem(noteId, newtitle, newtask)
+
         currentuser?.let { user ->
             val noteReference: DatabaseReference = DbRef.child("Users").child(user.uid)
-                .child("Notes").child(noteId)
+                .child("Notes")
+            val updatetask = NoteItem(newtitle, newtask,noteId)
             noteReference.child(noteId).setValue(updatetask)
                 .addOnCompleteListener { taskId ->
                     if (taskId.isSuccessful) {
@@ -144,5 +146,8 @@ class MainActivity : AppCompatActivity(), NoteAdapter.OnItemClickListener {
 
                 }
         }
+
     }
+
+
 }
