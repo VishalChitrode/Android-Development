@@ -41,31 +41,31 @@ class AllNotesActivity : AppCompatActivity() {
         val currentuser = auth.currentUser // here we declare current user and get current user
 
         currentuser?.let { task ->
-    val notereference = DbRef.child("Users").child(task.uid).child("Notes")
-        .addValueEventListener(object : ValueEventListener{
-            override fun onDataChange(snapshot: DataSnapshot) {
-                val notelist : MutableList<NoteItem> = mutableListOf<NoteItem>()
+            val notereference = DbRef.child("Users").child(task.uid).child("Notes")
+                .addValueEventListener(object : ValueEventListener{
+                    override fun onDataChange(snapshot: DataSnapshot) {
+                        val notelist : MutableList<NoteItem> = mutableListOf<NoteItem>()
 
-                for (noteSnapshot: DataSnapshot in snapshot.children){
-                    val note:NoteItem? = noteSnapshot.getValue(NoteItem::class.java)
-                  note?.let {
-                      notelist.add(it)
-                  }
+                        for (noteSnapshot: DataSnapshot in snapshot.children){
+                            val note:NoteItem? = noteSnapshot.getValue(NoteItem::class.java)
+                            note?.let {
+                                notelist.add(it)
+                            }
 //                    notelist.reverse()
 
-                }
-                    val adapter = NoteAdapter()
-                noterecyclerView.adapter  = adapter
+                        }
+                        val adapter = NoteAdapter(notelist, this@AllNotesActivity)
+                        noterecyclerView.adapter  = adapter
 
 
-            }
+                    }
 
-            override fun onCancelled(error: DatabaseError) {
-                TODO("Not yet implemented")
-            }
+                    override fun onCancelled(error: DatabaseError) {
+                        TODO("Not yet implemented")
+                    }
 
-        })
+                })
 
 
-    }
-}}
+        }
+    }}

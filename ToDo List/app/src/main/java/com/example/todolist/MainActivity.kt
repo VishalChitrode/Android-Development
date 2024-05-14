@@ -24,7 +24,7 @@ import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 
 class MainActivity : AppCompatActivity(), NoteAdapter.OnItemClickListener {
-    private val binding : ActivityMainBinding by lazy {
+    private val binding: ActivityMainBinding by lazy {
         ActivityMainBinding.inflate(layoutInflater)
     }
     private lateinit var auth: FirebaseAuth
@@ -48,12 +48,12 @@ class MainActivity : AppCompatActivity(), NoteAdapter.OnItemClickListener {
             val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestIdToken("194592876563-em7co61p9dta5s4v3em48247kupb15pd.apps.googleusercontent.com")
                 .requestEmail().build()
-            GoogleSignIn.getClient(this,gso).signOut()
-            startActivity(Intent(this,LoginActivity::class.java))
+            GoogleSignIn.getClient(this, gso).signOut()
+            startActivity(Intent(this, LoginActivity::class.java))
 
         }
         binding.createButton.setOnClickListener {
-            startActivity(Intent(this,CreateActivity::class.java))
+            startActivity(Intent(this, CreateActivity::class.java))
         }
 
 
@@ -66,20 +66,20 @@ class MainActivity : AppCompatActivity(), NoteAdapter.OnItemClickListener {
 
         currentuser?.let { task ->
             val notereference = DbRef.child("Users").child(task.uid).child("Notes")
-                .addValueEventListener(object : ValueEventListener{
+                .addValueEventListener(object : ValueEventListener {
                     override fun onDataChange(snapshot: DataSnapshot) {
-                        val notelist : MutableList<NoteItem> = mutableListOf<NoteItem>()
+                        val notelist: MutableList<NoteItem> = mutableListOf<NoteItem>()
 
-                        for (noteSnapshot: DataSnapshot in snapshot.children){
-                            val note:NoteItem? = noteSnapshot.getValue(NoteItem::class.java)
+                        for (noteSnapshot: DataSnapshot in snapshot.children) {
+                            val note: NoteItem? = noteSnapshot.getValue(NoteItem::class.java)
                             note?.let {
                                 notelist.add(it)
                             }
 //                    notelist.reverse()
 
                         }
-                        val adapter = NoteAdapter(notelist,this@MainActivity)
-                        noterecyclerView.adapter  = adapter
+                        val adapter = NoteAdapter(notelist, this@MainActivity)
+                        noterecyclerView.adapter = adapter
 
 
                     }
@@ -96,16 +96,16 @@ class MainActivity : AppCompatActivity(), NoteAdapter.OnItemClickListener {
 
     override fun ondeleteclick(noteId: String) {
         val currentuser = auth.currentUser
-        currentuser?.let { user->
-            val noteReference : DatabaseReference = DbRef.child("Users").child(user.uid)
+        currentuser?.let { user ->
+            val noteReference: DatabaseReference = DbRef.child("Users").child(user.uid)
                 .child("Notes").child(noteId)
             noteReference.removeValue()
 
         }
     }
 
-    override fun onupdateclick(noteId: String,newtitle :String,newtask:String) {
-        val dialogBinding : UpdateBinding = UpdateBinding.inflate(LayoutInflater.from(this))
+    override fun onupdateclick(noteId: String, newtitle: String, newtask: String) {
+        val dialogBinding: UpdateBinding = UpdateBinding.inflate(LayoutInflater.from(this))
         val dialog = AlertDialog.Builder(this)
             .setView(dialogBinding.root)
             .setTitle("Update Note")
@@ -123,10 +123,11 @@ class MainActivity : AppCompatActivity(), NoteAdapter.OnItemClickListener {
         dialogBinding.updateTitle.setText(newtitle)
         dialogBinding.updateNote.setText(newtask)
         dialog.show()
-        }
+    }
+
     private fun onupdateNote(noteId: String, newtitle: String, newtask: String) {
         val currentuser = auth.currentUser
-        val updatetask = NoteItem(noteId,newtitle,newtask)
+        val updatetask = NoteItem(noteId, newtitle, newtask)
         currentuser?.let { user ->
             val noteReference: DatabaseReference = DbRef.child("Users").child(user.uid)
                 .child("Notes").child(noteId)
@@ -141,6 +142,7 @@ class MainActivity : AppCompatActivity(), NoteAdapter.OnItemClickListener {
                     }
 
 
-}
                 }
-        }}
+        }
+    }
+}
