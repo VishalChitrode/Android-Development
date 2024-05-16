@@ -2,16 +2,18 @@ package com.example.retrofit
 
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import kotlinx.coroutines.DelicateCoroutinesApi
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
 class MainActivity : AppCompatActivity() {
-    @OptIn(DelicateCoroutinesApi::class)
+ 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -21,12 +23,27 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val api = RetrofitBuiulder.getInstance().create(myInterface::class.java)
-        GlobalScope.launch {
-            val response = api.getQuotes()
-            if (response != null) {
-                Log.d("Tag", response.body()?.string())
-            }
+        val button = findViewById<Button>(R.id.button)
+        button.setOnClickListener {
+            val postId = 1 // Replace with the desired post ID
+            val call = ApiClient.apiService.getPostById(postId)
+
+            call.enqueue(object : Callback<Result> {
+                override fun onResponse(call: Call<Result>, response: Response<Result>) {
+                    if (response.isSuccessful) {
+                        val post = response.body()
+                        Log.d("Tag", response.body().toString())
+                        Toast.makeText(this@MainActivity,response.body().toString(),Toast.LENGTH_SHORT).show()
+
+                    } else {
+                        // Handle error
+                    }
+                }
+
+                override fun onFailure(call: Call<Result>, t: Throwable) {
+                    // Handle failure
+                }
+            })
         }
     }
 }
