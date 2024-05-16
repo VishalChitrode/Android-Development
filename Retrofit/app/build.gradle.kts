@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.mapboxmap"
+    namespace = "com.example.retrofit"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.mapboxmap"
+        applicationId = "com.example.retrofit"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -16,9 +16,7 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
-buildFeatures {
-    viewBinding = true
-}
+
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -44,15 +42,9 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
-    implementation(libs.play.services.maps)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
-
-
     androidTestImplementation(libs.androidx.espresso.core)
-
-    implementation("com.mapbox.maps:android:11.3.1")
-
-
-
+    implementation ("com.squareup.retrofit2:retrofit:2.0.2")
+    implementation ("com.squareup.retrofit2:converter-gson:2.0.2")
 }

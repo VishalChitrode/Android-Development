@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomLocationComponent">
+        <item name="mapbox_locationComponentLocationPuckLocationPuck2DTopImage">@drawable/user</item>
+        <item name="mapbox_locationComponentLocationPuckLocationPuck2DBearingImage">@drawable/user</item>
+        <item name="mapbox_locationComponentLocationPuckLocationPuck2DShadowImage">@drawable/user</item>
+    </style>
+</resources>

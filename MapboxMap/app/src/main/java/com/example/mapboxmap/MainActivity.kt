@@ -9,26 +9,38 @@ import android.graphics.drawable.Drawable
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.annotation.DrawableRes
+import androidx.annotation.NonNull
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.content.res.AppCompatResources
+import androidx.core.content.ContextCompat
+import androidx.core.graphics.drawable.toBitmap
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.mapbox.android.gestures.RotateGestureDetector
 import com.mapbox.geojson.Point
+import com.mapbox.maps.CameraOptions
+import com.mapbox.maps.MapInitOptions
 import com.mapbox.maps.MapView
 import com.mapbox.maps.Style
+import com.mapbox.maps.extension.style.image.image
+import com.mapbox.maps.extension.style.layers.generated.symbolLayer
+import com.mapbox.maps.extension.style.layers.properties.generated.IconAnchor
+import com.mapbox.maps.extension.style.sources.generated.geoJsonSource
+import com.mapbox.maps.extension.style.style
 import com.mapbox.maps.plugin.annotation.annotations
 import com.mapbox.maps.plugin.annotation.generated.PointAnnotationOptions
 import com.mapbox.maps.plugin.annotation.generated.createPointAnnotationManager
-
-class MainActivity : AppCompatActivity() {
-
+import com.mapbox.maps.plugin.gestures.OnRotateListener
 
 
+class MainActivity : AppCompatActivity(){
 
-
-    
     private lateinit var mapView: MapView
     @SuppressLint("MissingInflatedId")
+
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -45,8 +57,45 @@ class MainActivity : AppCompatActivity() {
                     addAnnotationToMap()
                 }
             })
+        // set initial camera position
+        val initialCameraOptions = CameraOptions.Builder()
+            .center(Point.fromLngLat(75.8577, 22.7196))
+            .pitch(45.0)
+            .zoom(15.5)
+            .bearing(-17.6)
+            .build()
 
+        mapView.mapboxMap.also {
+            it.setCamera(
+                CameraOptions.Builder()
+                    .center(Point.fromLngLat(LONGITUDE, LATITUDE))
+                    .zoom(8.0)
+                    .build()
+            )
+        }.loadStyle(
+            styleExtension = style(Style.MAPBOX_STREETS) {
+                // prepare blue marker from resources
+                +image(
+                    BLUE_ICON_ID,
+                    ContextCompat.getDrawable(this@MainActivity, R.drawable.img)!!.toBitmap()
+                )
+                +geoJsonSource(SOURCE_ID) {
+                    geometry(Point.fromLngLat(LONGITUDE, LATITUDE))
+                }
+                +symbolLayer(LAYER_ID, SOURCE_ID) {
+                    iconImage(BLUE_ICON_ID)
+                    iconAnchor(IconAnchor.BOTTOM)
+                }
+            }
+        )
+    }
 
+    companion object {
+        private const val BLUE_ICON_ID = "blue"
+        private const val SOURCE_ID = "source_id"
+        private const val LAYER_ID = "layer_id"
+        private const val LATITUDE = 22.719568
+        private const val LONGITUDE = 75.857727
     }
 
     private fun addAnnotationToMap() {
@@ -57,7 +106,7 @@ class MainActivity : AppCompatActivity() {
             val annotationApi = mapView?.annotations
             val pointAnnotationManager = annotationApi?.createPointAnnotationManager()
             val pointAnnotationOptions: PointAnnotationOptions = PointAnnotationOptions()
-                .withPoint(Point.fromLngLat(19.0760, 72.8777))
+                .withPoint(Point.fromLngLat(75.857727, 22.719568))
                 .withIconImage(it)
             pointAnnotationManager?.create(pointAnnotationOptions)
         }
@@ -85,4 +134,11 @@ class MainActivity : AppCompatActivity() {
         }
     }
 }
+
+
+
+
+
+
+
 
