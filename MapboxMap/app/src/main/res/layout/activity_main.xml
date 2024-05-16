@@ -5,16 +5,14 @@
     android:id="@+id/main"
     android:layout_height="match_parent">
 
+
     <com.mapbox.maps.MapView
         android:id="@+id/mapView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:mapbox_cameraTargetLat="39.5"
-        app:mapbox_cameraTargetLng="-98.0"
-        app:mapbox_cameraZoom="2.0"
         mapbox:mapbox_cameraTargetLat="59.31"
         mapbox:mapbox_cameraTargetLng="18.06"
-        app:mapbox_cameraPitch="0.0"
-        app:mapbox_cameraBearing="0.0" />
+        mapbox:mapbox_cameraZoom="9.0"
+        />
 
 </FrameLayout>
