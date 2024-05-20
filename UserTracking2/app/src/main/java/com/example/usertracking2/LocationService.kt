@@ -1,10 +1,7 @@
 package com.example.usertracking2
 
 import android.annotation.SuppressLint
-import android.app.Notification
-import android.app.NotificationChannel
-import android.app.NotificationManager
-import android.app.Service
+import android.app.*
 import android.content.Intent
 import android.location.Location
 import android.os.Build
@@ -94,7 +91,14 @@ class LocationService : Service() {
     private fun onNewLocation(location: Location?) {
         this.location = location
         postLocationEvent(location)
+        updateFirebaseDatabase()
         updateNotification()
+    }
+
+    private fun updateFirebaseDatabase() {
+        location?.let {
+            DbRef.child("location").setValue(it)
+        }
     }
 
     private fun getNotification(): Notification {
@@ -122,4 +126,3 @@ class LocationService : Service() {
         EventBus.getDefault().post(LocationEvent(location?.latitude, location?.longitude))
     }
 }
-
