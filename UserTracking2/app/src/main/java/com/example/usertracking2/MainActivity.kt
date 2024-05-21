@@ -118,4 +118,8 @@ class MainActivity : AppCompatActivity() {
             EventBus.getDefault().unregister(this)
         }
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> feec63d52883b6e88af3bac23f832bfb5ab65885

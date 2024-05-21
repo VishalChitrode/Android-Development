@@ -1,0 +1,3 @@
+
+
+Implement `any()` using `fold()`.

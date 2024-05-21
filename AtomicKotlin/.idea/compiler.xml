@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel target="1.8">
+      <module name="AtomicKotlinCourse.util" target="17" />
+      <module name="AtomicKotlinCourse.util.main" target="17" />
+      <module name="AtomicKotlinCourse.util.test" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

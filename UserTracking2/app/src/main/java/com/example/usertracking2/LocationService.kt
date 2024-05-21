@@ -127,4 +127,8 @@ class LocationService : Service() {
         EventBus.getDefault().post(LocationEvent(location?.latitude, location?.longitude))
     }
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> feec63d52883b6e88af3bac23f832bfb5ab65885
