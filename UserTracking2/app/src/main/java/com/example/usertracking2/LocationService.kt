@@ -97,7 +97,8 @@ class LocationService : Service() {
 
     private fun updateFirebaseDatabase() {
         location?.let {
-            DbRef.child("location").setValue(it)
+            val locationData = hashMapOf("latitude" to it.latitude, "longitude" to it.longitude)
+            DbRef.child("location").setValue(locationData)
         }
     }
 
@@ -125,4 +126,5 @@ class LocationService : Service() {
     private fun postLocationEvent(location: Location?) {
         EventBus.getDefault().post(LocationEvent(location?.latitude, location?.longitude))
     }
+
 }
