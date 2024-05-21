@@ -64,16 +64,21 @@ class MainActivity : AppCompatActivity() {
 //            }
         }
     }
+
     @Subscribe(threadMode = ThreadMode.MAIN)
-    fun onLocationEvent(event: LocationEvent) {
-        event.latitude?.let { latitude ->
-            event.longitude?.let { longitude ->
-                // Send location updates to Firebase Realtime Database
-                val locationRef = FirebaseDatabase.getInstance().getReference("location")
-                locationRef.setValue(hashMapOf("latitude" to latitude, "longitude" to longitude))
-            }
+    fun receiveLocationEvent(locationEvent: LocationEvent) {
+        val latitude = locationEvent.latitude
+        val longitude = locationEvent.longitude
+
+        if (latitude != null && longitude != null) {
+            val locationRef = FirebaseDatabase.getInstance().getReference("location")
+            locationRef.child("latitude").setValue(latitude)
+            locationRef.child("longitude").setValue(longitude)
+            binding.tvLatitude.text = "Latitude: $latitude"
+            binding.tvLongitude.text = "Longitude: $longitude"
         }
     }
+
     override fun onStart() {
         super.onStart()
         EventBus.getDefault().register(this)
@@ -108,14 +113,9 @@ class MainActivity : AppCompatActivity() {
     }
     override fun onDestroy() {
         super.onDestroy()
-        stopService(service)
+//        stopService(service)
         if (EventBus.getDefault().isRegistered(this)) {
             EventBus.getDefault().unregister(this)
         }
-    }
-    @Subscribe
-    fun receiveLocationEvent(locationEvent: LocationEvent) {
-        binding.tvLatitude.text = "Latitude -> ${locationEvent.latitude}"
-        binding.tvLongitude.text = "Longitude -> ${locationEvent.longitude}"
     }
 }
