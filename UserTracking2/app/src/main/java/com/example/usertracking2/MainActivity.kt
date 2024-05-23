@@ -86,6 +86,7 @@ class MainActivity : AppCompatActivity() {
             EventBus.getDefault().register(this)
         }
     }
+
     fun checkPermissions() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             if (ActivityCompat.checkSelfPermission(
@@ -107,10 +108,12 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
+
     override fun onStop() {
         super.onStop()
         EventBus.getDefault().unregister(this)
     }
+
     override fun onDestroy() {
         super.onDestroy()
 //        stopService(service)
@@ -118,8 +121,4 @@ class MainActivity : AppCompatActivity() {
             EventBus.getDefault().unregister(this)
         }
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> feec63d52883b6e88af3bac23f832bfb5ab65885

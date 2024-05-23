@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MVP Image Presenter</string>
+
+    <string name="buttonText">Display Next Course</string>
+    <string name="heading">MVP Architecture Pattern</string>
+    <string name="subHeading">GeeksforGeeks Computer Science Online Courses</string>
+    <string name="description">Course Description</string>
+</resources>
